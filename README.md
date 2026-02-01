@@ -66,7 +66,26 @@ Aplicação para controle de estoque que permite gerenciar produtos, registrar m
 
 ## 4. Como Executar o Projeto
 
-### Backend
+### Docker Compose
+
+1. Na raiz do projeto, suba os containers:
+   ```bash
+   docker compose up --build
+   ```
+
+2. Acesse:
+   - API: **http://localhost:8080/api**
+   - Swagger UI: **http://localhost:8080/api/swagger-ui.html**
+   - Frontend: **http://localhost:5173**
+
+3. Para parar e remover os containers:
+   ```bash
+   docker compose down
+   ```
+### Sem Docker (execução local)
+
+As seções abaixo são para rodar o projeto **sem Docker**.
+#### Backend
 
 1. Entre na pasta da API:
    ```bash
@@ -96,7 +115,7 @@ Aplicação para controle de estoque que permite gerenciar produtos, registrar m
 - **User Name:** `douglas`
 - **Password:** `123`
 
-### Frontend
+#### Frontend
 
 1. Entre na pasta do frontend:
    ```bash
